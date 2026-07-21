@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+    "target": "ES2017",
+=======
+>>>>>>> origin/main
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -10,7 +14,11 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
+    "jsx": "react-jsx",
+=======
     "jsx": "preserve",
+>>>>>>> origin/main
     "incremental": true,
     "plugins": [
       {
@@ -18,9 +26,23 @@
       }
     ],
     "paths": {
+<<<<<<< HEAD
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+=======
       "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+>>>>>>> origin/main
   "exclude": ["node_modules"]
 }

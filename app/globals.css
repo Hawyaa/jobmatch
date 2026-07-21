@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* =========================
+   JobMatch Brand System
+   ========================= */
+
+:root {
+  --background: #FAF7F2;       /* Warm Cream */
+  --foreground: #361117;       /* Dark Burgundy */
+
+  --burgundy: #361117;
+  --burgundy-dark: #2A0D11;
+
+  --cream: #F4EFEA;
+  --cream-light: #FAF7F2;
+
+  --bronze: #C8A284;
+  --espresso: #4A2823;
+}
+
+
+/* =========================
+   Base Styles
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--burgundy);
+  font-weight: 700;
+}
+
+
+p {
+  color: var(--espresso);
+}
+
+
+/* =========================
+   Selection
+   ========================= */
+
+::selection {
+  background: var(--bronze);
+  color: var(--burgundy-dark);
+}
+
+
+/* =========================
+   Scrollbar
+   ========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--bronze);
+  border-radius: 20px;
+}
