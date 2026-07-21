@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,38 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# JobMatch
+
+CV-based job search platform.
+
+## Setup
+
+```bash
+npm install
+cp .env.example .env.local   # fill in real keys — never commit .env.local
+npm run dev
+```
+
+## Structure
+
+- `src/app/api/cv/parse` — extract raw text from uploaded PDF/DOCX
+- `src/app/api/cv/extract` — raw text → Groq → structured profile JSON
+- `src/app/api/jobs/search` — profile + filters → JSearch → normalized job results
+- `src/app/api/assistant/chat` — site-guide chat widget, powered by Groq
+- `src/lib/firebase.ts` — client-side Firebase (Auth + Firestore)
+- `src/lib/firebase-admin.ts` — server-side Firebase Admin (API routes only)
+
+## Env vars (see `.env.example`)
+
+- `GROQ_API_KEY`
+- `RAPIDAPI_KEY`
+- `NEXT_PUBLIC_FIREBASE_API_KEY`
+- `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+- `FIREBASE_ADMIN_PRIVATE_KEY`
+- `FIREBASE_ADMIN_CLIENT_EMAIL`
+
+## Status
+
+Scaffold only — routes are stubs (`501 not implemented`), Firebase config wired but needs real project keys.
+>>>>>>> origin/main

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --background: #F6EFDC; */
+  --background: #FFF8ED;
+  --foreground: #2A1015;
+  --burgundy-dark: #3E1420;
+  --burgundy: #6E1E32;
+  /* --cream: #F6EFDC; */
+  --cream: #FFF8ED;
+  --gold: #C9A574;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
